@@ -29,7 +29,7 @@ option,
 .header-bar *,
 .item-group-container,
 .item-group-container *,
-#syllabusContainer *:not(a) {
+#syllabusContainer *:not(a), #flashalert_message_holder {
   background: var(--dark-bg) !important;
   color: var(--dark-fg) !important;
 }
