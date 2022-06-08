@@ -32,7 +32,9 @@ option,
 #syllabusContainer *:not(a),
 .ic-app-main-content *,
 .fvvQs_bGBk * /*Discussion-settings*/,
-i:before /*Icons*/ {
+i:before /*Icons*/,
+#flashalert_message_holder *,
+#dashboard * {
   background: var(--dark-bg) !important;
   color: var(--dark-fg) !important;
 }
