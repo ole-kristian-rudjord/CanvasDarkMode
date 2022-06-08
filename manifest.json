@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "CanvasDarkMode",
+    "version": "1",
+    "content_scripts": [{
+        "matches": ["https://oslomet.instructure.com/*"],
+        "css": ["canvasDarkMode.css"],
+        "run_at": "document_end"
+    }]
+}

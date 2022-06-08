@@ -1,0 +1,80 @@
+:root {
+  --dark-bg: rgb(53, 53, 53);
+  --dark-fg: rgb(240, 240, 240);
+  --dark-fg-faded: rgb(150, 150, 150);
+  --dark-link: rgb(190, 190, 255);
+  --dark-link-faded: rgb(150, 150, 207);
+}
+
+div *,
+span *,
+#breadcrumbs,
+.header-bar {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+body,
+option {
+  background-color: var(--dark-bg) !important;
+  color: var(--dark-fg) !important;
+}
+
+nav a.active {
+  color: var(--dark-fg) !important;
+  border-left-color: var(--dark-fg) !important;
+}
+
+a {
+  color: var(--dark-link) !important;
+}
+a:hover {
+  color: var(--dark-link-faded) !important;
+}
+
+span[style*="background-color: "] {
+  background-color: #ffff00 !important;
+  color: black !important;
+}
+
+.ui-icon {
+  filter: invert(1) !important; /*Using color:; does not work*/
+}
+
+.button-sidebar-wide {
+  color: var(--dark-fg) !important;
+}
+.button-sidebar-wide:hover {
+  color: var(--dark-fg) !important;
+  background-color: var(--dark-fg-faded) !important;
+}
+
+.icon-hamburger {
+  color: var(--dark-fg) !important;
+}
+.icon-hamburger:hover {
+  color: var(--dark-fg-faded) !important;
+}
+
+
+.mini-cal-header, .Button--icon-action {
+  color: var(--dark-fg) !important;
+}
+.Button--icon-action:hover {
+  color: var(--dark-fg) !important;
+  background-color: var(--dark-fg-faded) !important;
+}
+.mini_month .other_month:not(.current_month) {
+  color: var(--dark-fg-faded) !important;
+}
+.mini_month .current_month {
+  color: var(--dark-fg) !important;
+}
+.mini_month .today {
+  color: var(--dark-bg) !important;
+  background-color: var(--dark-fg) !important;
+}
+.mini_month .day_wrapper:hover {
+  color: var(--dark-fg) !important;
+  background-color: var(--dark-fg-faded) !important;
+}
