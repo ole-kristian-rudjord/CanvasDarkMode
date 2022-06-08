@@ -30,11 +30,10 @@ option,
 .item-group-container,
 .item-group-container *,
 #syllabusContainer *:not(a),
-.ic-app-main-content *,
 .fvvQs_bGBk * /*Discussion-settings*/,
 i:before /*Icons*/,
 #flashalert_message_holder *,
-#dashboard * {
+#dashboard *:not(.ic-DashboardCard__header_image):not(.ic-DashboardCard__header_hero) {
   background: var(--dark-bg) !important;
   color: var(--dark-fg) !important;
 }
