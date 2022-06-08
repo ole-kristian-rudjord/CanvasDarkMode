@@ -7,7 +7,8 @@
   --dark-link-faded: rgb(150, 150, 207);
 }
 
-a *,
+a:not(header *),
+a *:not(header *),
 .user_content a:not(.btn):not(.Button):not(.ui-button):not([role="button"]),
 .mceContentBody {
   color: #00b0ff !important;
@@ -23,7 +24,12 @@ option,
 .btn,
 .Button,
 .ui-button,
-.header-bar-outer-container * {
+.header-bar-outer-container *,
+.header-bar, 
+.header-bar *,
+.item-group-container,
+.item-group-container *,
+#syllabusContainer *:not(a) {
   background: var(--dark-bg) !important;
   color: var(--dark-fg) !important;
 }
@@ -39,11 +45,16 @@ span[style*="background-color:"] {
   color: black !important;
 }
 
-ul>*,
+ul>*:not(header *),
 li a~span,
 p * {
   color: var(--text) !important;
   background-color: var(--dark-bg) !important;
+}
+
+.ui-icon {
+  background-color: transparent !important;
+  filter: invert(1) !important; /*Using color:; does not work*/
 }
 
 .icon-hamburger {
@@ -53,7 +64,6 @@ p * {
 .icon-hamburger:hover {
   color: var(--dark-fg-faded) !important;
 }
-
 
 .mini-cal-header,
 .Button--icon-action {
@@ -72,6 +82,7 @@ p * {
 .mini_month .day_wrapper:hover {
   color: var(--dark-fg) !important;
   background-color: var(--dark-fg-faded) !important;
+  border-radius: 3px;
 }
 
 .mini_month .other_month:not(.current_month) {
@@ -88,7 +99,6 @@ p * {
   color: inherit;
 }
 
-#header,
 .navigation-tray-container {
   background-color: var(--darkest-bg) !important;
   color: inherit;
