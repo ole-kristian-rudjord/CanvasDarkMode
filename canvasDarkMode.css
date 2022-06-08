@@ -29,7 +29,10 @@ option,
 .header-bar *,
 .item-group-container,
 .item-group-container *,
-#syllabusContainer *:not(a) {
+#syllabusContainer *:not(a),
+.ic-app-main-content *,
+.fvvQs_bGBk * /*Discussion-settings*/,
+i:before /*Icons*/ {
   background: var(--dark-bg) !important;
   color: var(--dark-fg) !important;
 }
